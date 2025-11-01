@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Správa faktur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <ul class="header-links">
+        <li>
+            <a href="#">Nová osoba</a>
+            <a href="#">Nová Faktura</a>
+            <a href="#">Statistiky</a>
+        </li>
+    </ul>
+</header>
+<main>
+
+    <div class="main-table-container">
+        <table>
+            <caption>Osoby ve fakturách</caption>
+            <thead>
+            <tr>
+                <th scope="col">Jméno</th>
+                <th scope="col">Příjmení</th>
+                <th scope="col">Datum narození</th>
+                <th scope="col">Email</th>
+                <th scope="col">Telefonní číslo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Karel</td>
+                <td>Novák</td>
+                <td>14.9.2005</td>
+                <td>Karel.Novak@example.com</td>
+                <td>+420777888999</td>
+                <td><button class="button-20">Zobrazit</button></td>
+                <td><button class="button-20">Upravit</button></td>
+                <td><button class="button-20">Smazat</button></td>
+            </tr>
+            <tr>
+                <td>Pavel</td>
+                <td>Černý</td>
+                <td>5.10.1960</td>
+                <td>Pavel.Cerny@example.com</td>
+                <td>+420444555666</td>
+                <td><button class="button-20">Zobrazit</button></td>
+                <td><button class="button-20">Upravit</button></td>
+                <td><button class="button-20">Smazat</button></td>
+            </tr>
+            </tbody>
+            <!--
+            <tfoot>
+            <tr>
+                <th scope="row" colspan="3">Total</th>
+                <td>4200</td>
+            </tr>
+            </tfoot>
+            -->
+        </table>
+        <div class="new-person-button-container">
+            <button class="button-20">Nová osoba</button>
+        </div>
+        <div class="pagination-container">
+            <button class="button-20">&lt;-</button>
+            <button class="button-20">1</button>
+            <button class="button-20">2</button>
+            <button class="button-20">3</button>
+            <button class="button-20">-&gt;</button>
+            <label>
+                Vyberte si počet položek na stránku
+                <select name="pagination" id="pagination">
+                    <option value="1">/1</option>
+                    <option value="5">/5</option>
+                    <option value="10">/10</option>
+                    <option value="20">/20</option>
+                </select>
+            </label>
+        </div>
+    </div>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
