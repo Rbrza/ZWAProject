@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <title>Správa faktur</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 <body>
 <header class="header">
     <ul class="header-links">
         <li>
-            <a href="#">Nová osoba</a>
-            <a href="#">Nová Faktura</a>
+            <a href="index.html">Osoby</a>
             <a href="#">Statistiky</a>
         </li>
+        <a href="new-account-admin.html"><i class="bi bi-person-circle profile-icon"></i></a>
     </ul>
 </header>
 <main>
 
     <div class="main-table-container">
         <table>
-            <caption>Osoby ve fakturách</caption>
+            <caption>Osoby v pojištění</caption>
             <thead>
             <tr>
                 <th scope="col">Jméno</th>
@@ -61,7 +63,7 @@
             -->
         </table>
         <div class="new-person-button-container">
-            <button class="button-20">Nová osoba</button>
+            <a class="button-20" href="new-account-admin.html">Nová osoba</a>
         </div>
         <div class="pagination-container">
             <button class="button-20">&lt;-</button>
